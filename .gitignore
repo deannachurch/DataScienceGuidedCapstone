@@ -139,4 +139,5 @@ cython_debug/
 
 #other stuff
 .DS_Store
+Notebooks/img/.DS_Store
 
