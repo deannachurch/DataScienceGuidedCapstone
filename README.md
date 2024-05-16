@@ -1,5 +1,15 @@
 # DataScienceGuidedCapstone
 
+Guided Capstone project for Springboard.
+
+Updates made to repo:
+
+* added an img/ directory under 'Notebooks'. Each notebook has it's own subdirectory. Figures generated from notebooks are saved there. 
+* models/ created by notebook for storing models.
+* Springboard.yml: conda env used for doing this Capstone.
+
+## Text below this from original repo
+
 Hello students!
 Welcome to the Data Science Guided Capstone! 
 
