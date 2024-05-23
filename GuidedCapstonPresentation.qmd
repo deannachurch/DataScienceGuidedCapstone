@@ -1,0 +1,110 @@
+---
+title: "Guided Capstone Project Presentation"
+author: Deanna M. Church
+date: today
+format:
+    beamer:
+        theme: Boadilla
+        fontsize: "16 pt"
+        include-in-header: logo.sty
+---
+
+## Big Mountain Pricing Analysis
+
+This exercise was initiated to find opportunities for Big Mountain to increase revenue and/or decrease operating costs for the upcoming season. 
+
+### Questions to address
+
+* What amenities drive value for customers?
+* How does Big Mountain's pricing reflect the current amenities?
+* Where should Big Mountain focus efforts to increase revenue and customer satisfaction?
+
+## Recommendations and Key Findings
+
+### Big Mountain provides good value for the price
+
+**Recommendation:** Increase ticket prices by $9
+
+### Close infrequently used runs 
+
+**Recommendation:** Close 2-3 of the least used runs and monitor the impact. If no negative impact, close 2-3 more infrequently used runs.
+
+### Vertical Drop is a value driver
+
+**Recommendation:** If there are positive outcomes from the first two recommendations, add a new lift to support a run with increased vertical drop.
+
+
+## Modeling Results: Value drivers
+
+:::: {.columns}
+::: {.column width="60%"}
+
+![](images/Top5RFFeatures.png){fig-pos='b'}
+
+:::
+
+::: {.column width="40%"}
+Top 5 features:
+
+* Fast Quads
+* Runs
+* Snowmaking
+* Vertical Drop
+* Snow Making Coverage
+* Total Chairs
+:::
+::::
+
+Note: There was overlap in important features with the other model that was generated, lending some support to these features driving value.
+
+## Modeling Results: Current Pricing Levels
+
+:::: {.columns}
+::: {.column width="80%"}
+
+![](images/AWPriceAllResorts.png){fig-pos='b'}
+
+:::
+
+::: {.column width="20%"}
+Big Mountain is the most expensive resort in Montana.
+:::
+::::
+
+The selected model identified **$95.87** as the target price (the current price of $81). The model as a mean error of +/- $10.39. The recommendation of a price of **$90** seems a good balance capturing value and taking the model error into account.
+
+## Modeling Results: Run Closures
+
+![](images/NumberofRnsAndRevenue.png){width="90%" fig-pos='b'}
+
+The impact of closing a small number of infrequently used runs is negligible and within the margin of error of the model. Starting with closing a few runs initial helps tests the validity of the model.
+
+
+## Modeling Results: Increasing Vertical Drop
+
+While snow making capacity is a driver of value, Big Mountain is already near the top of all resorts. Vertical Drop is also a strong value driver, and an area where Big Mountain can improve. 
+
+::: {#fig-drop-snowmaking layout-ncol=2}
+![Ski making capacity](images/SnowMakingCapacity.png)
+
+![Vertical Drop](images/VerticalDrop.png)
+:::
+
+
+Modeling suggests that increasing vertical drop and adding a lift to support this can support a **$1.99** ticket increase, leading to greater than $3.4M in additional revenue.
+
+## Summary and Conclusions
+
+* Big Mountain could likely increase ticket prices with no changes to amenities.
+    + Closing the least used runs could provide additional cost savings.
+* Upgrading the Vertical Drop could also drive additional revenue
+
+**Caveats**
+
+* This is a preliminary model
+    + The mean error is +/- $10
+    + How some of the features interact is not intuitive or well understood
+* Testing the model with reversible changes is a good first step.
+* Obtaining additional data may also be useful
+    + Demographics of Big Mountain customers (particularly local vs visitor)
+    + Annual customers at other resorts
